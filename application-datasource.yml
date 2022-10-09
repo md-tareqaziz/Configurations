@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/ms?useUnicode=true&characterEncoding=UTF-8
+    username: tq
+    password: t@q
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        enable_lazy_load_no_trans: true
