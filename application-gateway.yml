@@ -50,12 +50,12 @@ spring:
             scopes: openid
         provider:
           keycloak:
-            issuer-uri: ${KEYCLOAK_URL:http://localhost:8080}/realms/test
+            issuer-uri: ${KEYCLOAK_URL:http://192.168.1.4:8080}/realms/test
 
   session:
     store-type: redis
   redis:
-    host: localhost
+    host: ${REDIS_HOST:192.168.1.4}
     port: 6379
 
 resilience4j:
