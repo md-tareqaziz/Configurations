@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/ms?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:postgresql://192.168.1.4:5432/ms?useUnicode=true&characterEncoding=UTF-8
     username: tq
     password: t@q
     driver-class-name: org.postgresql.Driver
