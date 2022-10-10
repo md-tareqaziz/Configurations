@@ -3,7 +3,7 @@ spring:
     gateway:
       routes:
         - id: employee-route
-          uri: ${EMPLOYEE_SERVICE_URL:http://MSEMPLOYEE}
+          uri: ${EMPLOYEE_SERVICE_URL:lb://msemployee}
           predicates:
             - Path=/employee/**
           filters:
@@ -21,7 +21,7 @@ spring:
                 name: employeeService
                 fallbackUri: forward:/employee-fallback/
         - id: project-route
-          uri: ${PROJECT_SERVICE_URL:http://MSPROJECT}
+          uri: ${PROJECT_SERVICE_URL:lb://msproject}
           predicates:
             - Path=/projects/**
           filters:
