@@ -50,7 +50,7 @@ spring:
             scopes: ${CLIENT_SCOPES:openid}
         provider:
           keycloak:
-            issuer-uri: ${KEYCLOAK_URL:http://192.168.1.4:8080}/realms/ms
+            issuer-uri: http://${KEYCLOAK_HOST:192.168.1.4}:${KEYCLOAK_PORT:8080}/realms/${KEYCLOAK_REALMS:ms}
 
   session:
     store-type: redis
