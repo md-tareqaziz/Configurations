@@ -3,7 +3,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${REGISTRY_HOST:192.168.1.4}:${REGISTRY_PORT:8761}/eureka/
+      defaultZone: http://${REGISTRY_HOST:ms.tq.com}:${REGISTRY_PORT:8761}/eureka/
   instance:
     prefer-ip-address: true
 #    hostname: localhost
